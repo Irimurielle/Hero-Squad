@@ -1,0 +1,26 @@
+{{#partial "content"}}
+    <div class="container">
+        <h1>Fill in the form for the hero:</h1>
+        <form action='/hero/new' method="post">
+            <div class="form-group">
+                <label for="hname">Name</label>
+                <input id="hname" name="hname" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input id="age" name="age" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="power">Power</label>
+                <input id="power" name="power" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="weakness">Weakness</label>
+                <input id="weakness" name="weakness" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn">Go!</button>
+        </form>
+    </div>
+{{/partial}}
+
+{{> layout.hbs}}

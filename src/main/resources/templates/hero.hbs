@@ -1,0 +1,21 @@
+{{#partial "content"}}
+   <div class="container">
+       <div class=" text-center">
+           <a class="btn" href="/hero-form" >Create Your Hero</a>
+       </div>
+       <h2 class="text-center">Heroes</h2>
+       <div class="heroes text-center">
+           {{#each hero}}
+               <div class="hero-item">
+                   <p>Name: {{ name }} </p>
+                   <p>Age: {{ age }}</p>
+                   <p>Power: {{ power }}</p>
+                   <p>Weakness: {{ weakness }}</p>
+                   <a href="/squad" class="btn">Add {{ name }} To Squad</a>
+               </div>
+           {{/each}}
+       </div>
+   </div>
+{{/partial}}
+
+{{> layout.hbs}}

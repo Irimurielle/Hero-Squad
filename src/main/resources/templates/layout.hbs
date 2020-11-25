@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{#block "title"}}Hero Squad{{/block}}</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+</head>
+<body>
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="/">Home</a></li>
+    <li role="presentation"><a href="/hero">Heroes</a></li>
+    <li role="presentation"><a href="/squad">Squads</a></li>
+</ul>
+<div class="container-fluid" style="background-image:url("public/images/heroes.jpg")>
+    <div class="container">
+        <h1 class="text-center">Welcome To Hero Squad</h1>
+    </div>
+        {{#block "content"}}
+            <div class="text-center">
+                <h4>Recruit a well-balanced team of superheroes</h4>
+                <a href="/hero-form" class="squad-btn btn">Create Hero</a>
+            </div>
+        {{/block}}
+</div>
+{{#block "footer"}}
+    <footer class="page-footer ">
+        <div class="footer-copyright text-center py-3">© 2020 Copyright</div>
+    </footer>
+</body>
+</html>
+{{/block}}

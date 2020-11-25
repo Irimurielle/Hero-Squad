@@ -1,0 +1,38 @@
+{{#partial "content"}}
+    <div class="container">
+        <div class="squad text-center">
+            <a class="btn" href="/form">Create Your Squad</a>
+            <br><br>
+            {{#if squads}}
+                <h3>SQUADS</h3>
+                {{#each squads}}
+                    <div class="squad-cont">
+                        <div class="text-center">
+                            <p>Name:{{name}}</p>
+                            <p>Cause: {{cause}}</p>
+                            <p>Participants: {{ size }}</p>
+                            <br><br>
+                            <h3>Heroes</h3>
+                            <div id="newHero">
+                                {{#each heroes}}
+                                    <div class="hero-item">
+                                        <div class="hero-detail">
+                                            <p>Name: {{name}}</p>
+                                            <p>Age: {{age}}</p>
+                                            <p>Power: {{ power }}</p>
+                                            <p>Weakness: {{weakness}}</p>
+                                        </div>
+                                    </div>
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+            {{else}}
+                <h2>Please create a squad to continue</h2>
+            {{/if}}
+        </div>
+    </div>
+{{/partial}}
+
+{{> layout.hbs}}

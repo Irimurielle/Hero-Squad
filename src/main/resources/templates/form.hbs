@@ -1,0 +1,22 @@
+{{#partial "content"}}
+    <div clas="container">
+        <h1>Fill in the form for the squad:</h1>
+        <form action='/squad/new' method="post">
+            <div class="form-group">
+                <label for="sname">Squad name</label>
+                <input id="sname" name="sname" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="size">Max size</label>
+                <input id="size" name="size" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="Cause">Cause</label>
+                <input id="cause" name="cause" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn">Go!</button>
+        </form>
+    </div>
+{{/partial}}
+
+{{> layout.hbs}}
