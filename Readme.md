@@ -11,5 +11,7 @@ An applicatipn that allows you to recruit a well-balanced team of superheroes.
 * Install Java
 * Install IntelliJ IDEA
 * Install Gradle
-
+### Screenshots
+![](public/images/Screenshot from 2020-11-25 15-30-32.png)
+![](public/images/Screenshot from 2020-11-25 15-30-44.png)
 Copyright (c) 2020 [MIT LICENSE](./License)
